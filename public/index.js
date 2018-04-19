@@ -5,7 +5,7 @@ const app = function () {
   let currentX = canvas.width / 2;
   let currentY = canvas.height / 2;
 
-  context.fillStyle = '#f2f2f2';
+  context.fillStyle = '#e2e2e2';
   context.fillRect(0, 0, canvas.width, canvas.height);
 
   context.beginPath();

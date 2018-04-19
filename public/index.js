@@ -58,7 +58,6 @@ const app = function () {
   }
 
   document.addEventListener('keydown', checkKey);
-  document.addEventListener('keypress', checkKey);
 
 }
 

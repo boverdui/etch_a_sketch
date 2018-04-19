@@ -23,22 +23,23 @@ const app = function () {
   }
 
   const leftArrow = function () {
-    currentX -= 5;
-    context.lineTo(currentX, currentY);
-    context.stroke();
+    if (currentX !== 0) currentX -= 5;
+    drawLine();
   }
   const rightArrow = function () {
-    currentX += 5;
-    context.lineTo(currentX, currentY);
-    context.stroke();
+    if (currentX !== canvas.width) currentX += 5;
+    drawLine();
   }
   const upArrow = function () {
-    currentY -= 5;
-    context.lineTo(currentX, currentY);
-    context.stroke();
+    if (currentY !== 0) currentY -= 5;
+    drawLine();
   }
   const downArrow = function () {
-    currentY += 5;
+    if (currentY !== canvas.height) currentY += 5;
+    drawLine();
+  }
+
+  const drawLine = function () {
     context.lineTo(currentX, currentY);
     context.stroke();
   }

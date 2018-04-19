@@ -10,12 +10,16 @@ const app = function () {
 
   const checkKey = function (event) {
     if (event.key === 'ArrowLeft') {
+      event.preventDefault();
       leftArrow();
     } else if (event.key === 'ArrowUp') {
+      event.preventDefault();
       upArrow();
     } else if (event.key === 'ArrowRight') {
+      event.preventDefault();
       rightArrow();
     } else if (event.key === 'ArrowDown') {
+      event.preventDefault();
       downArrow();
     } else if (event.key === 'Backspace') {
       clearAll();

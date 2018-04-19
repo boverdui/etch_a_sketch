@@ -4,4 +4,14 @@ body {
 
 canvas {
   border: 5px solid red;
+  position: absolute;
+  left: 175px;
+  top: 170px;
+}
+
+#canvas-div {
+  background-image: url(images/etch_a_sketch.png);
+  background-size: contain;
+  height: 800px;
+  width: 1000px;
 }

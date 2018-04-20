@@ -55,6 +55,11 @@ const app = function () {
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.beginPath();
     context.fillRect(0, 0, canvas.width, canvas.height);
+    const canvasDiv = document.getElementById('canvas-div');
+    canvasDiv.className = 'shake';
+    setTimeout(function () {
+      canvasDiv.className = '';
+    }, 1000)
   }
 
   document.addEventListener('keydown', checkKey);
